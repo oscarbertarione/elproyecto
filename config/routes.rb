@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  root 'welcome#index'
+
   get 'dashboard/index'
   get 'panel/index'
   resources :leccions, only: [:index, :show] do
